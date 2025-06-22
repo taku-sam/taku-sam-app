@@ -6,6 +6,15 @@ from streamlit_plotly_events import plotly_events
 import base64
 import numpy as np
 
+st.set_page_config(
+    page_title="My App",           # アプリのタイトル
+    layout="centered",             # または "wide"
+    initial_sidebar_state="expanded"  # サイドバーを最初から表示
+)
+
+
+
+
 # ページ全体 (body) とサイドバー (フィルター) の背景を設定する CSS を出力
 st.markdown(
     """
